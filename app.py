@@ -1,6 +1,4 @@
 from flask import Flask, render_template, request, flash, redirect
-
-import sys
 from googletrans import Translator
 
 # App config
