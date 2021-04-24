@@ -21,7 +21,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold fst-italic mb-2 h1">TranslateAll</a>
+                <a class="navbar-brand fw-bold fst-italic mb-2 h1" href="/">TranslateAll</a>
             </div>
         </nav>
 
@@ -43,10 +43,12 @@
                     <div class="p-2 flex-fill bd-highlight flex-wrap">
                         <textarea type="text" class="form-control p-r" name="text" rows="7" placeholder="English-Spanish/Spanish-English translator. Write your sentence here..." autofocus required autocomplete="off">{% block text %}{% endblock %}</textarea>
                         <select name="lang" class="form-select p-r">
+                        {% block lang %}
                         <option disabled selected>Select the input language</option>
                         {% for lang in langs %}
                         <option>{{ lang }}</option>
                         {% endfor %}
+                        {% endblock %}
                         </select>
                     </div>
                     <div class="p-2 bd-highlight">

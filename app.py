@@ -30,7 +30,7 @@ def index():
 
         translated = str(t_output.text)
 
-        return render_template("translated.html", langs=langs, result=result, translated=translated, lang=in_lang)
+        return render_template("translated.html", langs=langs, result=result, translated=translated, in_lang=in_lang)
 
 
     else:

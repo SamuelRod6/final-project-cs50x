@@ -4,6 +4,15 @@
 {{ result }}
 {% endblock %}
 
+{% block lang %}
+<option>{{ in_lang }}</option>
+{% for lang in langs %}
+    {% if lang != in_lang %}
+        <option>{{ lang }}</option>
+    {% endif %}
+{% endfor %}
+{% endblock %}
+
 {% block translation %}
 {{ translated }}
 {% endblock %}
