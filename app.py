@@ -12,7 +12,7 @@ langs = ["Spanish", "English"]
 @app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        result = request.form.get("text")
+        result = request.form.get("text").strip()
         in_lang = request.form.get("lang")
         
         if not (in_lang in langs):
