@@ -1,5 +1,5 @@
 # TranslateAll
-#### Video Demo: <URL>
+#### Video Demo: https://youtu.be/ynFkllEwTRs
 #### Description:
 TranslateAll is a Spanish to English, and English to Spanish translator created with Flask, styled with Bootstrap 5, scripts in jQuery and deployed on Heroku using Git and Github. This is made up of different parts:
 
